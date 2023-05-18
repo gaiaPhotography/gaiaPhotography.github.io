@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<!--
+index.html
+Created 09.12.21
+Updated 05.18.23
+The Lighthouse Collective
+-->
+
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="description" content="At Gaia Photography, we translate the rhythmic dance of nature into stunning visual narratives. Our images, reflecting the ethereal blend of Metalumina's raw vibrancy and metallic gleam, honor the silent tales of the earth. Based in Harlingen, TX, we venture into the heart of the wild, immortalizing the magnificent interplay of life and landscape.">
+    <meta name="keywords" content="Gaia, Wildlife Photography, Nature, Photos, Portfolio, Harlingen, TX, Adventure, Exploration, Outdoors, Monochrome, Metallic, Modern, Edgy, Metalumina, Unique, Wilderness, Earth, Wildlife, Landscape">
+    <meta name="author" content="The Lighthouse Collective">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+ 
+    <!-- GOOGLE ANALYTICS -->
+    
+    <title>Gaia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/favIcon.png" type="image/png">
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">
+                    <a href="#">
+                        <img src="images/logoFull.png" alt="Gaia Wildlife Photography Logo">
+                    </a>
+                </td>                
+                <td id="navigation">
+                    <a href="#bio">Our Journey</a>
+                    <a href="#work">Gallery</a>
+                    <a href="#contact">Reach Out</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Witness Nature's Symphony,<br>Through Our Lens</h1>
+                <button class="btn_one">Follow Our Journey</button>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://www.instagram.com/gaia.nature.photography/"><i class="fab fa-instagram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://twitter.com/GaiaPhotography"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://www.flickr.com/photos/gaiapics/"><i class="fab fa-flickr"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.behance.net/gaiaphotography"><i class="fab fa-behance"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+   
+    <div id="bio">
+        <h1>Our Journey</h1>
+        <p>
+            Gaia Photography captures the rhythmic dance of nature and wildlife, immortalizing moments that whisper tales of the earth.  Our vision finds its roots in the raw vibrancy of the wild, and we translate this onto a canvas of frozen time, where the glimmer of life meets the luminescence of a metallic dawn. As a facet of Metalumina, we share the mission to blend the raw with the radiant, crafting a chiaroscuro of monochromatic hues where the primal dance of wildlife meets a modern, edgy aesthetic.
+            <br> <br>
+            Our lens delves into the silent narratives of the natural world, exploring the unspoken dialogue between land, sky, and creature. Each photograph serves as a testament to the exquisite beauty of our planet, an invitation to embark on a journey into the heart of the wild. With Gaia, the magic of nature is immortalized.
+        </p>
+    </div>
+
+    <div id="work">
+        <h1>Our Gallery</h1>
+        <p>Experience the allure of the wilderness through our lens. Our gallery showcases the infinite wonders of nature, captured in all their glory.</p>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="/images/nature1.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/images/nature2.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/images/nature3.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/images/nature4.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/images/nature5.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/images/nature6.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/images/nature7.jpg">
+        </div>
+    </div>
+
+    <div id="contact">
+        <h1>Reach Out</h1>
+        <p>We'd love to hear from you. Whether you have a question or simply want to share your thoughts, don't hesitate to connect. We're here to take you on a journey into the wild.</p>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <div id="inner_div">
+                        <table id="inner_table">
+                            <tr>
+                                <td><i class="fas fa-phone"></i> &nbsp; 307.213.9222</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-at"></i> &nbsp; connect@gaiapics.com</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-map-marker-alt"></i>
+                                <div id="address">
+                                    Exploring the Wilderness, North America <br>
+                                    & beyond
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="social" href="https://www.instagram.com/gaia.nature.photography/"><i class="fab fa-instagram"></i></a>
+                                    <a class="social" href="https://twitter.com/GaiaPhotography"><i class="fab fa-twitter"></i></a>
+                                    <a class="social" href="https://www.flickr.com/photos/gaiapics/"><i class="fab fa-flickr"></i></a>
+                                    <a class="social" href="https://www.behance.net/gaiaphotography"><i class="fab fa-behance"></i></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <form action="/submit_form" method="post">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required><br>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+                        <textarea id="message" name="message" placeholder="Message" required rows="3"></textarea><br>
+                        <div class="captcha-send">
+                            <div class="g-recaptcha" data-sitekey="your-recaptcha-site-key"></div><br>
+                            <button class="btn_one" type="submit">SEND</button>
+                        </div>
+                    </form> 
+                </td>
+            </tr>
+        </table>
+    </div> 
+    
+    <div id="footer">
+        <div class="footer-item">
+            <p>Powered by<br><a href="https://www.lighthousecollective.net" target="blank">The Lighthouse Collective</a></p>
+        </div>
+        <div class="footer-item">
+            <a href="#" class="logo-link">
+                <img src="images/logo.png" alt="Gaia Nature Photography Logo" />
+            </a>
+            <p class="copyright">&copy; Gaia Photography, 2023. All rights reserved.</p>
+        </div>
+        <div class="footer-item">
+            <p class="metalumina-text">A creative endeavor within<br><a href="https://www.metalumina.studio" target="blank">the Metalumina spectrum</a></p>
+        </div>
+    </div>    
+
+    <script src="index.js" type="text/javascript"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+
+</body>
+</html>
